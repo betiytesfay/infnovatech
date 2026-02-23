@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './SearchBar.css';
+import './searchBar.css';
 
 const SearchBar = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -26,6 +26,14 @@ const SearchBar = ({ onSearch }) => {
           value={searchTerm}
           onChange={handleChange}
         />
+        <div>
+          <input
+            type="text"
+            placeholder="search Instructors..."
+            value={searchTerm}
+            onChange={handleChange}
+          />
+        </div>
         <span className="search-icon">🔍</span>
       </div>
 

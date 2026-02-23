@@ -1,6 +1,6 @@
 import React from 'react';
 import CourseCard from './courseCard';
-import './CourseGrid.css';
+import './courseGrid.css';
 
 const CourseGrid = ({ courses, searchTerm }) => {
   const filteredCourses = courses.filter(course =>
