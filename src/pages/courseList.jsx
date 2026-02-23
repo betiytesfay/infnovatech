@@ -5,7 +5,7 @@ import SearchBar from '../components/searchBar';
 import CourseGrid from '../components/courseGrid';
 import Footer from '../components/footer';
 import { courses } from '../data/courses';
-import './CoursesListPage.css';
+import './courseList.css';
 
 const CoursesListPage = () => {
   const [searchTerm, setSearchTerm] = useState('');

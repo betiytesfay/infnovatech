@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { courses } from '../data/courses';
 import InstructorCard from '../components/instructorCard';
 import Footer from '../components/footer';
-import './CourseDetailPage.css';
+import './courseDetail.css';
 
 const CourseDetailPage = () => {
   const { id } = useParams();
