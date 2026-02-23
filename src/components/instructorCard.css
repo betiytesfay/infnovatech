@@ -1,0 +1,85 @@
+.instructor-card {
+  display: flex;
+  gap: 2rem;
+  background: white;
+  border-radius: 24px;
+  padding: 2.5rem;
+  margin: 2rem 0;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.02);
+}
+
+.instructor-avatar {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  flex-shrink: 0;
+  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+}
+
+.instructor-info {
+  flex: 1;
+}
+
+.instructor-info h3 {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+  color: #0a1e3c;
+  font-weight: 600;
+}
+
+.instructor-bio {
+  color: #475569;
+  margin-bottom: 1.25rem;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.instructor-expertise {
+  color: #334155;
+  font-size: 1rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.instructor-expertise strong {
+  color: #0a1e3c;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .instructor-card {
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+
+  .instructor-avatar {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+  }
+
+  .instructor-info h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .instructor-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.75rem;
+  }
+
+  .instructor-bio {
+    font-size: 1rem;
+  }
+}

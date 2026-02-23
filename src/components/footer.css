@@ -1,0 +1,124 @@
+.footer {
+  background: #0f172a;
+  color: white;
+  padding: 4rem 2rem 2rem;
+  margin-top: 4rem;
+}
+
+.footer-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  /* Academy section takes 2fr, others 1fr each */
+  gap: 4rem;
+}
+
+/* Academy Section */
+.academy-section h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.academy-section p {
+  color: #94a3b8;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  max-width: 350px;
+}
+
+/* Quick Links and Support Sections */
+.footer-section h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 1rem;
+}
+
+.footer-section a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-size: 0.95rem;
+}
+
+.footer-section a:hover {
+  color: white;
+}
+
+/* Copyright Section */
+.copyright {
+  text-align: center;
+  color: #64748b;
+  padding-top: 3rem;
+  margin-top: 3rem;
+  border-top: 1px solid #1e293b;
+  font-size: 0.9rem;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer-content {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    /* 2 columns on tablet */
+    gap: 2.5rem;
+  }
+
+  .academy-section {
+    grid-column: 1 / -1;
+    /* Academy section takes full width */
+  }
+
+  .academy-section p {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding: 3rem 1.5rem 1.5rem;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    /* 1 column on mobile */
+    gap: 2rem;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .academy-section p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .copyright {
+    padding-top: 2rem;
+    margin-top: 2rem;
+  }
+}

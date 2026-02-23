@@ -1,0 +1,6 @@
+.courses-list-page {
+  background-color: #f8fafc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
