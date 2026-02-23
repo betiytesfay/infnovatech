@@ -10,7 +10,6 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  /* Academy section takes 2fr, others 1fr each */
   gap: 4rem;
 }
 
@@ -24,7 +23,7 @@
 }
 
 .academy-section p {
-  color: #94a3b8;
+  color: #ffffff;
   line-height: 1.7;
   font-size: 0.95rem;
   max-width: 350px;

@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './header.css'
-
+import logo from '../assets/Logo.png';
 const Header = () => {
   return (
     <header className="header">
       <div className="header-top">
         <div className="logo">
           <Link to="/">
-            <img src="../assets/Logo.png" alt="INFNOVA Academy" />
+            <img src={logo} alt="INFNOVA Academy" />
           </Link>
         </div>
         <nav className="navbar">
@@ -19,15 +19,12 @@ const Header = () => {
             <li><Link to="/contact">Contact</Link></li>
           </ul>
         </nav>
-        <div>
+        <div className="header-actions">
           <button className="login-btn">Sign In</button>
           <button className="signup-btn">Enroll Now</button>
         </div>
       </div>
-      <div className="header-content">
-        <h1>Explore Our Courses</h1>
-        <p>Master new skills with expert-led courses designed for the modern learner. Start your learning journey today with INFNOVA Academy.</p>
-      </div>
+
     </header>
   )
 }

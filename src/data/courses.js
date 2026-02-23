@@ -116,8 +116,8 @@ export const courses = [
   {
     id: 7,
     level: "INTERMEDIATE",
-    category: "DEVOPS",
-    title: "CI/CD Pipelines & Automation",
+    category: "MOBILEAPP",
+    title: "Mobile App Development",
     description: "Master modern DevOps practices. Learn to automate testing, deployment, and infrastructure management.",
     longDescription: "This hands-on course teaches you how to build robust CI/CD pipelines, automate infrastructure, and implement DevOps best practices.",
     instructor: {
@@ -136,7 +136,7 @@ export const courses = [
     id: 8,
     level: "ADVANCED",
     category: "CYBERSECURITY",
-    title: "Network Security Fundamentals",
+    title: "CyberSecurity Foundations",
     description: "Learn to protect networks and systems from cyber threats. Understand security principles, threat detection, and response.",
     longDescription: "This course covers essential cybersecurity concepts, from network security to incident response. You'll learn to identify vulnerabilities and implement protections.",
     instructor: {

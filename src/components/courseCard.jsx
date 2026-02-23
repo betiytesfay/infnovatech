@@ -8,14 +8,14 @@ const CourseCard = ({ course }) => {
   // Function to get image based on category
   const getImageSrc = (category) => {
     const images = {
-      'DATA SCIENCE': '/images/data-science.jpg',
-      'WEB DEVELOPMENT': '/images/web-dev.jpg',
-      'DESIGN': '/images/design.jpg',
-      'CLOUD ENGINEERING': '/images/cloud.jpg',
-      'DATA ANALYTICS': '/images/data-analytics.jpg',
-      'BLOCKCHAIN': '/images/blockchain.jpg',
-      'DEVOPS': '/images/devops.jpg',
-      'CYBERSECURITY': '/images/security.jpg'
+      'WEB DEVELOPMENT': '../src/assets/Image (Full Stack Web Development Bootcamp).png',
+      'DATA SCIENCE': '../src/assets/Image (Data Analytics with Python).png',
+      'DESIGN': '../src/assets/UX Design for Modern Products).png',
+      'CLOUD ENGINEERING': '../src/assets/Image (Cloud Engineering with AWS).png',
+      'DATA ANALYTICS': '../src/assets/Image (Data Analytics with Python).png',
+      'BLOCKCHAIN': '../src/assets/Image (Blockchain & Fintech Systems).png',
+      'MOBILEAPP': '../src/assets/Image (Mobile App Development with Flutter).png',
+      'CYBERSECURITY': '../src/assets/Image (Cybersecurity Foundations).png'
     };
     return images[category] || '/images/default-course.jpg';
   };
@@ -23,7 +23,7 @@ const CourseCard = ({ course }) => {
   return (
     <Link to={`/course/${course.id}`} className="course-card-link">
       <div className="course-card">
-        {/* Image Container with BEGINNER badge */}
+
         <div className="course-image-container">
           <img
             src={getImageSrc(course.category)}

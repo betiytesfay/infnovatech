@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section academy-section">
-          <h3>INFNOVA Academy</h3>
+          <h3 className="color-white">INFNOVA Academy</h3>
           <p>Empowering learners worldwide with cutting-edge technology courses. Start your journey to success with expert-led training.</p>
         </div>
 

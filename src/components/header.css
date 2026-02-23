@@ -1,12 +1,7 @@
-.header {
-  margin-bottom: 2.5rem;
-}
-
 .header h1 {
   font-size: 2.5rem;
   font-weight: 700;
   color: white;
-  margin-bottom: 0.75rem;
   line-height: 1.2;
 }
 
@@ -15,6 +10,12 @@
   color: #ffffff;
   max-width: 650px;
   line-height: 1.6;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 @media (max-width: 768px) {
@@ -71,7 +72,7 @@
 
 .signup-btn {
   padding: 0.5rem 1.25rem;
-  background: #db450a;
+  background: #F54900;
   color: white;
   border-radius: 10px;
   font-weight: 600;
@@ -79,10 +80,9 @@
 }
 
 .login-btn {
-  padding: 0.5rem 1.25rem;
+  padding: 0.5rem 1rem;
   background: transparent;
-  color: #db450a;
-
+  color: #F54900;
   font-weight: 600;
   border: none;
   transition: background 0.2s, color 0.2s;
@@ -110,5 +110,26 @@
   .nav-links {
     gap: 1rem;
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .header-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .login-btn,
+  .signup-btn {
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem;
+    font-size: 0.95rem;
   }
 }
