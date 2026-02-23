@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './SearchBar.css';
+import './searchBar.css';
 
 const SearchBar = ({ onSearch, onCategoryChange, onLevelChange }) => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -22,7 +22,7 @@ const SearchBar = ({ onSearch, onCategoryChange, onLevelChange }) => {
   };
 
   return (
-    <div className="filters-container padding:0.5rem ">
+    <div className="filters-container  ">
       {/* Box 1: Search Input */}
       <div className="filter-box search-box">
         <input
