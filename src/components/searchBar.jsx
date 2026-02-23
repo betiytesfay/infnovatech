@@ -22,8 +22,7 @@ const SearchBar = ({ onSearch, onCategoryChange, onLevelChange }) => {
   };
 
   return (
-    <div className="filters-container  ">
-      {/* Box 1: Search Input */}
+    <div className="filters-container">
       <div className="filter-box search-box">
         <input
           type="text"
@@ -34,7 +33,6 @@ const SearchBar = ({ onSearch, onCategoryChange, onLevelChange }) => {
         <span className="search-icon">🔍</span>
       </div>
 
-      {/* Box 2: Category Dropdown */}
       <div className="filter-box dropdown-box">
         <select
           value={category}
@@ -42,19 +40,17 @@ const SearchBar = ({ onSearch, onCategoryChange, onLevelChange }) => {
           className="filter-select"
         >
           <option value="">All Categories</option>
-          <option value="WEB DEVELOPMENT">Web Development</option>
-          <option value="DATA SCIENCE">Data Science</option>
-          <option value="DESIGN">Design</option>
-          <option value="CLOUD ENGINEERING">Cloud Engineering</option>
-          <option value="DATA ANALYTICS">Data Analytics</option>
-          <option value="BLOCKCHAIN">Blockchain</option>
-          <option value="DEVOPS">DevOps</option>
-          <option value="CYBERSECURITY">Cybersecurity</option>
+          <option value="Web Development">Web Development</option>
+          <option value="Data Science">Data Science</option>
+          <option value="Design">Design</option>
+          <option value="Cloud Computing">Cloud Computing</option>
+          <option value="Mobile Development">Mobile Development</option>
+          <option value="Security">Security</option>
+          <option value="Blockchain">Blockchain</option>
         </select>
         <span className="dropdown-arrow">▼</span>
       </div>
 
-      {/* Box 3: Level Dropdown */}
       <div className="filter-box dropdown-box">
         <select
           value={level}
@@ -62,9 +58,9 @@ const SearchBar = ({ onSearch, onCategoryChange, onLevelChange }) => {
           className="filter-select"
         >
           <option value="">All Levels</option>
-          <option value="BEGINNER">Beginner</option>
-          <option value="INTERMEDIATE">Intermediate</option>
-          <option value="ADVANCED">Advanced</option>
+          <option value="Beginner">Beginner</option>
+          <option value="Intermediate">Intermediate</option>
+          <option value="Advanced">Advanced</option>
         </select>
         <span className="dropdown-arrow">▼</span>
       </div>
